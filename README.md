@@ -12,23 +12,23 @@ hamsterwk模板改编xz_sunbest的whurs-beamer模板[whurs_beamer](https://githu
 
 ## 示例
 
-![](/picture/test-01.png)
+![](/picture/test-1.png)
 
-![](/picture/test-02.png)
+![](/picture/test-2.png)
 
-![](/picture/test-03.png)
+![](/picture/test-3.png)
 
-![](/picture/test-04.png)
+![](/picture/test-4.png)
 
-![](/picture/test-05.png)
+![](/picture/test-5.png)
 
-![](/picture/test-06.png)
+![](/picture/test-6.png)
 
-![](/picture/test-07.png)
+![](/picture/test-7.png)
 
-![](/picture/test-08.png)
+![](/picture/test-8.png)
 
-![](/picture/test-09.png)
+![](/picture/test-9.png)
 
 ![](/picture/test-10.png)
 
