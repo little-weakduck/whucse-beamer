@@ -8,7 +8,9 @@
 \usepackage{ctex}
 \usepackage{xeCJK}
 \usepackage{fontspec} 
-\setCJKmainfont{Microsoft YaHei}
+% \setCJKmainfont{Microsoft YaHei} %for windows
+\setCJKmainfont{PingFang SC} %for mac
+
 % --------------------Biber Support----------------------------
 \usepackage[backend=biber]{biblatex}
 \addbibresource{bib.bib}
@@ -42,7 +44,8 @@
 
 % ---------------Global Color Settings----------------------------
 %\definecolor{whucolor}{RGB}{0 114 198}%Blue
-\definecolor{whucolor}{RGB}{22 89 154}%WHUCSBlue
+% \definecolor{whucolor}{RGB}{22 89 154}%WHUCSBlue
+\definecolor{whucolor}{RGB}{146 3 5} %WHU CSE RED
 %\definecolor{whucolor}{RGB}{1 168 156}%Cyan
 %\definecolor{whucolor}{RGB}{0 128 0}%Green
 %\definecolor{whucolor}{RGB}{249 105 14}%Orange
@@ -77,17 +80,17 @@
 \usebackgroundtemplate{
 	% ---------------------aspectratio=1610-----------------------
 	%\hspace*{0.235\paperwidth}
-	%{\includegraphics[width=0.6\paperwidth]{whucs}}
+	%{\includegraphics[width=0.6\paperwidth]{whucse}}
 	% ------------------------------------------------------------
 
 	% ---------------------aspectratio=169------------------------
 	\hspace*{0.26\paperwidth}
-	{\includegraphics[width=0.55\paperwidth]{whucs}}
+	{\includegraphics[width=0.55\paperwidth]{whucse}}
 	% ------------------------------------------------------------
 
 	% ---------------------aspectratio=43-------------------------
 	%\hspace*{0.18\paperwidth}
-	%{\includegraphics[width=0.725\paperwidth]{whucs}}
+	%{\includegraphics[width=0.725\paperwidth]{whucse}}
 	% ------------------------------------------------------------
 }
 

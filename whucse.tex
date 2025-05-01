@@ -8,8 +8,9 @@
 % --------------------Chinese Support--------------------------
 \usepackage{ctex}
 \usepackage{xeCJK}
-\usepackage{fontspec} 
-\setCJKmainfont{Microsoft YaHei}
+\usepackage{fontspec}
+% \setCJKmainfont{Microsoft YaHei} %for windows
+\setCJKmainfont{PingFang SC} %for mac
 % --------------------Biber Support----------------------------
 \usepackage[backend=bibtex]{biblatex}
 \addbibresource{bib.bib}
@@ -40,12 +41,13 @@
 
 \useinnertheme{rectangles}
 \setbeamertemplate{frametitle}{
-\leftskip=10pt\vspace{16pt}\insertframetitle
+    \leftskip=10pt\vspace{16pt}\insertframetitle
 }
 
 % ---------------Global Color Settings----------------------------
 %\definecolor{whucolor}{RGB}{0 114 198}%Blue
-\definecolor{whucolor}{RGB}{22 89 154}%WHUCSBlue
+% \definecolor{whucolor}{RGB}{22 89 154}%WHUCSBlue
+\definecolor{whucolor}{RGB}{146 3 5} %WHU CSE RED
 %\definecolor{whucolor}{RGB}{1 168 156}%Cyan
 %\definecolor{whucolor}{RGB}{0 128 0}%Green
 %\definecolor{whucolor}{RGB}{249 105 14}%Orange
@@ -81,17 +83,17 @@
 
 \setbeamertemplate{section in toc}
 {\leavevmode\leftskip=5ex%
-	\llap{%
-		\usebeamerfont*{section number projected}%
-		\usebeamercolor{section number projected}%
-		\begin{pgfpicture}{-1ex}{-0.5ex}{3ex}{4ex}
-			\color{bg}
-			\pgfpathcircle{\pgfpoint{0pt}{.75ex}}{1.7ex}
-			\pgfusepath{fill}
-			\pgftext[base]{\color{fg}\inserttocsectionnumber}
-		\end{pgfpicture}\kern1.25ex%
-	}%
-	\inserttocsection\par}
+    \llap{%
+        \usebeamerfont*{section number projected}%
+        \usebeamercolor{section number projected}%
+        \begin{pgfpicture}{-1ex}{-0.5ex}{3ex}{4ex}
+            \color{bg}
+            \pgfpathcircle{\pgfpoint{0pt}{.75ex}}{1.7ex}
+            \pgfusepath{fill}
+            \pgftext[base]{\color{fg}\inserttocsectionnumber}
+        \end{pgfpicture}\kern1.25ex%
+    }%
+    \inserttocsection\par}
 \setbeamertemplate{subsection in toc}
 {\leavevmode\leftskip=3em$\bullet$\hskip.5em\inserttocsubsection\par}
 
@@ -104,20 +106,20 @@
 
 \usepackage{transparent}
 \usebackgroundtemplate{
-	% ---------------------aspectratio=1610-----------------------
-	\hspace*{0.235\paperwidth}
-	{\includegraphics[width=0.6\paperwidth]{whucs}}
-	% ------------------------------------------------------------
+    % ---------------------aspectratio=1610-----------------------
+    \hspace*{0.235\paperwidth}
+    {\includegraphics[width=0.6\paperwidth]{whucse}}
+    % ------------------------------------------------------------
 
-	% ---------------------aspectratio=169------------------------
-	%\hspace*{0.26\paperwidth}
-	%{\includegraphics[width=0.55\paperwidth]{whucs}}
-	% ------------------------------------------------------------
+    % ---------------------aspectratio=169------------------------
+    %\hspace*{0.26\paperwidth}
+    %{\includegraphics[width=0.55\paperwidth]{whucse}}
+    % ------------------------------------------------------------
 
-	% ---------------------aspectratio=43-------------------------
-	%\hspace*{0.18\paperwidth}
-	%{\includegraphics[width=0.725\paperwidth]{whucs}}
-	% ------------------------------------------------------------
+    % ---------------------aspectratio=43-------------------------
+    %\hspace*{0.18\paperwidth}
+    %{\includegraphics[width=0.725\paperwidth]{whucse}}
+    % ------------------------------------------------------------
 }
 
 \setbeamertemplate{itemize item}[circle]
@@ -134,15 +136,15 @@
 \addtolength{\mywidth}{-\beamer@sidebarwidth}%
 \setbeamertemplate{footline}
 {
-  \leavevmode%
-  \hbox{%
-  \begin{beamercolorbox}[wd=\beamer@sidebarwidth,ht=1ex,dp=1ex,right]{sidebar}%
-  \end{beamercolorbox}
-  \begin{beamercolorbox}[wd=\mywidth,ht=1ex,dp=1ex,right]{myfootlinetext}%
-    \usebeamerfont{date in head/foot}\hfill\inserttitle\hspace*{2em}\insertshortauthor{}\hspace*{2em}
-    \insertframenumber{} / \inserttotalframenumber\hspace*{2ex}
-  \end{beamercolorbox}}%
-  \vskip0pt%
+    \leavevmode%
+    \hbox{%
+        \begin{beamercolorbox}[wd=\beamer@sidebarwidth,ht=1ex,dp=1ex,right]{sidebar}%
+        \end{beamercolorbox}
+        \begin{beamercolorbox}[wd=\mywidth,ht=1ex,dp=1ex,right]{myfootlinetext}%
+            \usebeamerfont{date in head/foot}\hfill\inserttitle\hspace*{2em}\insertshortauthor{}\hspace*{2em}
+            \insertframenumber{} / \inserttotalframenumber\hspace*{2ex}
+        \end{beamercolorbox}}%
+    \vskip0pt%
 }
 \makeatother
 
